@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+/* :root {
+  --primary--color: #fff;
+  --font--color: #e0e0e0;
+  --bg--color: #f0a1ac;
+}
+.music-container {
+  height: 100vh;
+  display: flex;
+}
+.player-container {
+  max-width: 800px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 30px;
+  font-family: montserrat;
+  border-radius: 15px;
+  box-shadow: 10px 10px 50px rgb(0, 0, 0, 0.1), 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 15px rgba(0, 0, 0, 0.1);
+}
+.title {
+  color: var(--font--color);
+  font-family: montserrat;
+  letter-spacing: 10px;
+  font-size: 3rem;
+}
+.music-img img {
+  width: 300px;
+  height: 300px;
+} */
+
+:root {
+  --primary--color: #fff;
+  --font--color: #e0e0e0;
+  --bg--color: #f0a1ac;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: montserrat;
+}
+
+.player-container {
+  max-width: 800px;
+  margin: auto;
+  gap: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.title {
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+  letter-spacing: 10px;
+  font-size: 4rem;
+  color: var(--font--color);
+}
+.music-img {
+  max-width: 600px;
+}
+.music-img img {
+  width: 250px; /* Adjust image width as needed */
+  height: 250px; /* Adjust image height as needed */
+  margin-bottom: 20px;
+}
+
+.songs {
+  text-align: left;
+  width: 400px; /* Align text to the left */
+}
+
+.songs h3 {
+  font-size: 1.5rem; /* Adjust font size as needed */
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+}
+.songs p {
+  font-size: 0.8rem;
+}
+.singer-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.singer-info h3 {
+  margin: 0;
+}
+.singer-info .rating .above-rating {
+  font-weight: 900;
+  font-size: 1.2rem;
+}
+.singer-info .rating .below-rating {
+  font-size: 0.6rem;
+  font-weight: 900;
+}
+.trackItem {
+  color: black;
+  font-size: 0.8rem;
+  font-weight: bold;
+  padding: 13px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.trackItem:hover {
+  color: white;
+  background-color: black;
+  transition: ease 0.3s;
+}
+.musicPlayer {
+  display: flex;
+  flex-direction: row;
+}
+
+.currentAndTotalTime {
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+#progressBar {
+  width: 250px;
+  height: 5px;
+  background-color: #434343;
+}
+
+#currentProgress {
+  width: 0%;
+  height: 100%;
+  background-color: #dc3545;
+}
+
+.controls {
+  font-size: 25px;
+  color: black;
+  margin: 15px 35px;
+  cursor: pointer;
+}
+
+.pauseButton {
+  display: none;
+}
